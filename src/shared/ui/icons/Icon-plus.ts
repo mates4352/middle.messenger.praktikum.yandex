@@ -1,0 +1,12 @@
+type IconPlusType = {
+  class?: string
+}
+
+export const IconPlus = (props: IconPlusType) => {
+  return `
+    <svg class="${props.class ? props.class : ""}" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="5.99988" y1="0.5" x2="5.99988" y2="11.5" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="0.499878" y1="6" x2="11.4999" y2="6" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+  `
+}
