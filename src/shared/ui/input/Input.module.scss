@@ -1,0 +1,39 @@
+.label {
+  position: relative;
+  height: 38px;
+}
+
+.labelText {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font: var(--font_4);
+  color: var(--grey-100);
+  transition: top 300ms ease, font-size 300ms ease;
+}
+
+.input {
+  font: var(--font_4);
+  color: var(--dark);
+  border-bottom: 1px solid var(--blue-100);
+}
+
+.input:focus + .labelText {
+  top: 0;
+  font: var(--font_7);
+}
+
+.input:valid + .labelText {
+  top: 0;
+  font: var(--font_7);
+}
+
+.error {
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+  font: var(--font_8);
+  color: var(--error);
+}
