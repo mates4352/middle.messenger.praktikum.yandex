@@ -33,7 +33,7 @@ export const Input = (props: InputType) => {
       <input 
         class="${s.input}" 
         type="${props.type}" 
-        name="${props.type}" 
+        name="${props.name}" 
         id="${props.id}"
         required
       />

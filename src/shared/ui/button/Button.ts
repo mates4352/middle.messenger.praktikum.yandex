@@ -5,7 +5,7 @@ import {getElement} from "../../lib/utils/get-element";
 type ButtonType = {
   class?: string
   text: string
-  id: string
+  id?: string
   type: string
   onClickButton?: () => void
 };

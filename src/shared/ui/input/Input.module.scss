@@ -8,6 +8,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  padding-bottom: 7px;
   pointer-events: none;
   font: var(--font_4);
   color: var(--grey-100);
@@ -15,6 +16,11 @@
 }
 
 .input {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
   font: var(--font_4);
   color: var(--dark);
   border-bottom: 1px solid var(--blue-100);
