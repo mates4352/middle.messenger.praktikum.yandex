@@ -14,14 +14,14 @@ export const Button = (props: ButtonType) => {
   const className = props.class ? `${props.class}  ${s.button}` : s.button
 
   runOnLoad(() => {
-    if(props.onClickButton) {
-      const button = getElement(`#${props.id}`)
+    const button = getElement(`#${props.id}`)
 
-      if(button) {
-        button.addEventListener("click", () => {
+    if(button) {
+      button.addEventListener("click", () => {
+        if(props.onClickButton) {
           props.onClickButton && props.onClickButton()
-        })
-      }
+        }
+      })
     }
   })
 
