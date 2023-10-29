@@ -1,6 +1,6 @@
 import s from "./Input.module.scss";
 import {runOnLoad} from "../../lib/utils/run-on-load";
-import {getElementId} from "../../lib/utils/get-element-id";
+import {getElement} from "../../lib/utils/get-element";
 
 type InputType = {
   class?: string;
@@ -15,7 +15,7 @@ export const Input = (props: InputType) => {
   const className = props.class ? `${props.class}  ${s.label}` : s.label
 
   runOnLoad(() => {
-    const input = getElementId(`#${props.id}`);
+    const input = getElement(`#${props.id}`);
 
     if (input) {
       input.addEventListener("input", (e: Event) => {

@@ -1,6 +1,6 @@
 import s from "./Button.module.scss";
 import {runOnLoad} from "../../lib/utils/run-on-load";
-import {getElementId} from "../../lib/utils/get-element-id";
+import {getElement} from "../../lib/utils/get-element";
 
 type ButtonType = {
   class?: string
@@ -15,7 +15,7 @@ export const Button = (props: ButtonType) => {
 
   runOnLoad(() => {
     if(props.onClickButton) {
-      const button = getElementId(`#${props.id}`)
+      const button = getElement(`#${props.id}`)
 
       if(button) {
         button.addEventListener("click", () => {
