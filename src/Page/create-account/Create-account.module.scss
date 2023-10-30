@@ -1,0 +1,14 @@
+.createAccount {
+  display: flex;
+  min-height: 100vh;
+}
+
+.body {
+  max-width: 340px;
+  width: 100%;
+  margin: auto;
+  padding: 50px 30px 30px;
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.14);
+}
