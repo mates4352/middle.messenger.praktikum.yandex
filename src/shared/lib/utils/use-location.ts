@@ -1,5 +1,9 @@
 export const useLocation = () => {
-  const pathname = window.location.pathname
+  const pathname:string = window.location.pathname
 
-  return [pathname] as const;
+  return [pathname];
+}
+
+export const sendLocation = (url: string) => {
+  window.location.pathname = url
 }

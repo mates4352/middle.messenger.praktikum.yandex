@@ -14,6 +14,7 @@ type FormSignInType = {
   class?: string
   id: string;
   onSubmit: (values: FormSubmitSignInType) => void
+  onClickButtonToSignIn: () => void
 };
 
 export const FormSignIn = (props: FormSignInType) => {
@@ -21,6 +22,11 @@ export const FormSignIn = (props: FormSignInType) => {
 
   runOnLoad(() => {
     const formSignIn: HTMLFormElement = getElement<HTMLFormElement>(`#${props.id}`)
+    const formButtonToSignIn = getElement("#form-button-to-sign-in");
+
+    formButtonToSignIn.addEventListener("click", () => {
+      props.onClickButtonToSignIn()
+    })
 
     if(formSignIn) {
       formSignIn.addEventListener("submit", (e) => {
@@ -54,7 +60,7 @@ export const FormSignIn = (props: FormSignInType) => {
             </li>
             
             <li>
-                <button class="${s.ButtonToSignIn}" type="button">Нет аккаунта?</button>
+                <button class="${s.ButtonToSignIn}" id="form-button-to-sign-in" type="button">Нет аккаунта?</button>
             </li>
         </ul>
     </form>

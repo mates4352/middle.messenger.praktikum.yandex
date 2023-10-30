@@ -18,6 +18,7 @@ type FormCreateAccountType = {
   class?: string
   id: string;
   onSubmit: (values: FormSubmitCreateAccountType) => void
+  onClickButtonToCreateAccount: () => void
 };
 
 export const FormCreateAccount = (props: FormCreateAccountType) => {
@@ -26,6 +27,11 @@ export const FormCreateAccount = (props: FormCreateAccountType) => {
 
   runOnLoad(() => {
     const formSignIn: HTMLFormElement = getElement<HTMLFormElement>(`#${props.id}`)
+    const formButtonToCreateAccount = getElement("#form-button-create-account");
+
+    formButtonToCreateAccount.addEventListener("click", () => {
+      props.onClickButtonToCreateAccount()
+    })
 
     if(formSignIn) {
       formSignIn.addEventListener("submit", (e) => {
@@ -75,7 +81,7 @@ export const FormCreateAccount = (props: FormCreateAccountType) => {
             </li>
             
             <li>
-                <button class="${s.ButtonToSignIn}">Войти</button>
+                <button class="${s.ButtonToSignIn}" id="form-button-create-account" type="button">Войти</button>
             </li>
         </ul>
     </form>
