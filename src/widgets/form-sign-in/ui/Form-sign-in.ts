@@ -54,7 +54,7 @@ export const FormSignIn = (props: FormSignInType) => {
             </li>
             
             <li>
-                <button class="${s.ButtonToSignIn}">Нет аккаунта?</button>
+                <button class="${s.ButtonToSignIn}" type="button">Нет аккаунта?</button>
             </li>
         </ul>
     </form>
