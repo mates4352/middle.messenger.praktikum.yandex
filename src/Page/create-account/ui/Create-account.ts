@@ -1,5 +1,5 @@
 import s from "./Create-account.module.scss";
-import {FormCreateAccount} from "../../widgets/form-create-account/ui/Form-create-account";
+import {FormCreateAccount} from "../../../widgets/form-create-account/ui/Form-create-account";
 
 type CreateAccountType = {
 
