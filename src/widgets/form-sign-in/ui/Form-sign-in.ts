@@ -4,7 +4,6 @@ import {runOnLoad} from "../../../shared/lib/utils/run-on-load";
 import {getElement} from "../../../shared/lib/utils/get-element";
 import {Input} from "../../../shared/ui/input/Input";
 import {Button} from "../../../shared/ui/button/Button";
-import {log} from "util";
 
 export type FormSubmitSignInType = {
   login: string;
@@ -42,12 +41,22 @@ export const FormSignIn = (props: FormSignInType) => {
 
   return `
     <form class="${className}" id="${props.id}">
+        <h2 class="${s.title}">Вход</h2>
+        
         <div class="${s.wrap}">
           ${Input({id:"login", name: "login", type: "text", labelValue: "Логин"})}
           ${Input({id:"password", name: "password", type: "password", labelValue: "Пароль"})}
         </div>
         
-        ${Button({text:"Авторизоваться", type:"submit"})}
+        <ul class="${s.list}">
+            <li>
+                ${Button({text:"Авторизоваться", type:"submit"})}
+            </li>
+            
+            <li>
+                <button class="${s.ButtonToSignIn}">Нет аккаунта?</button>
+            </li>
+        </ul>
     </form>
   `
 };
