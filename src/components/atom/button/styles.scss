@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: 37px;
+  font: var(--font_4);
+  color: var(--white);
+  background-color: var(--blue-100);
+  border-radius: 8px;
+  transition: transform 300ms ease, opacity 300ms ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

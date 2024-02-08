@@ -2,6 +2,7 @@
 @import "colors-variables";
 @import "fonts-variables";
 @import "normalize";
+@import "./src/components/atom/index";
 @import "./src/components/pages/index";
 
 .main {
