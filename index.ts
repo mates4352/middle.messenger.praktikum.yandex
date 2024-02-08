@@ -6,7 +6,6 @@ import { signIn } from "./src/components/pages";
 const comp = Handlebars.compile(tpl);
 
 const res = comp({
-  frame: "hello",
   page1: signIn(),
 });
 
