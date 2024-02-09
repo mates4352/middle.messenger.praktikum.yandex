@@ -3,8 +3,8 @@
   font: var(--input-text-font, var(--font_4));
   text-align: right;
   background-color: transparent;
+}
 
-  &:disabled {
-    pointer-events: none;
-  }
+.input-text-disabled {
+  pointer-events: none;
 }

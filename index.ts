@@ -6,6 +6,7 @@ import {
   Error,
   Profile,
   ProfileData,
+  ProfileDataChange,
   signIn,
 } from "./src/components/pages";
 
@@ -26,6 +27,9 @@ const res = comp({
   }),
   page5: Profile({
     content: ProfileData(),
+  }),
+  page6: Profile({
+    content: ProfileDataChange(),
   }),
 });
 

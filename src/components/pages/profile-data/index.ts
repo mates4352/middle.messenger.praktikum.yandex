@@ -10,66 +10,66 @@ export const ProfileData = () => {
       {
         text: "Почта",
         input: InputText({
+          className: "input-text-disabled",
           id: "profile-data-input-text-email",
           value: "pochta@yandex.ru",
           type: "text",
           name: "email",
-          disabled: true,
         }),
       },
 
       {
         text: "Логин",
         input: InputText({
+          className: "input-text-disabled",
           id: "profile-data-input-text-login",
           value: "ivanivanov",
           type: "text",
           name: "login",
-          disabled: true,
         }),
       },
 
       {
         text: "Имя",
         input: InputText({
+          className: "input-text-disabled",
           id: "profile-data-input-text-first-name",
           value: "Иван",
           type: "text",
           name: "first_name",
-          disabled: true,
         }),
       },
 
       {
         text: "Фамилия",
         input: InputText({
+          className: "input-text-disabled",
           id: "profile-data-input-text-second-name",
           value: "Иванов",
           type: "text",
           name: "second_name",
-          disabled: true,
         }),
       },
 
       {
         text: "Имя в чате",
         input: InputText({
+          className: "input-text-disabled",
           id: "profile-data-input-text-display-name",
           value: "Иван",
           type: "text",
           name: "display_name",
-          disabled: true,
         }),
       },
 
       {
         text: "Телефон",
         input: InputText({
+          className: "input-text-disabled",
           id: "profile-data-input-text-phone",
           value: "+7 (909) 967 30 30",
           type: "text",
           name: "phone",
-          disabled: true,
         }),
       },
     ],

@@ -1,0 +1,14 @@
+<section class="profile-data-change">
+    <form class="profile-data-change__form" id="{{idForm}}">
+        <div class="profile-data-change__content">
+            {{#each profileDataChangeContent}}
+                <div class="profile-data-change__wrap">
+                    <p class="profile-data-change__text">{{text}}</p>
+                    {{{input}}}
+                </div>
+            {{/each}}
+        </div>
+
+        {{{button}}}
+    </form>
+</section>
