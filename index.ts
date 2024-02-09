@@ -7,6 +7,7 @@ import {
   Profile,
   ProfileData,
   ProfileDataChange,
+  ProfileDataChangePassword,
   signIn,
 } from "./src/components/pages";
 
@@ -30,6 +31,10 @@ const res = comp({
   }),
   page6: Profile({
     content: ProfileDataChange(),
+  }),
+
+  page7: Profile({
+    content: ProfileDataChangePassword(),
   }),
 });
 

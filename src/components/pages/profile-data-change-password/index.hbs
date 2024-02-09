@@ -1,0 +1,14 @@
+<section class="profile-data-change-password">
+    <form class="profile-data-change-password__form" id="{{idForm}}">
+        <div class="profile-data-change-password__content">
+            {{#each profileDataChangePasswordContent}}
+                <div class="profile-data-change-password__wrap">
+                    <p class="profile-data-change-password__text">{{text}}</p>
+                    {{{input}}}
+                </div>
+            {{/each}}
+        </div>
+
+        {{{button}}}
+    </form>
+</section>
