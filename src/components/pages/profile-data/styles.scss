@@ -1,0 +1,54 @@
+.profile-data {
+
+  &__content {
+    margin-bottom: 60px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--grey-80);
+
+
+    &:first-of-type {
+      padding-top: unset;
+    }
+
+    &:last-of-type {
+      border-bottom: unset;
+      padding-bottom: unset;
+    }
+  }
+
+  &__text {
+    font: var(--font_4);
+    color: var(--dark);
+  }
+
+
+  &__list {
+  }
+
+  &__item {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--grey-80);
+
+    &:first-of-type {
+      padding-top: unset;
+    }
+
+    &:last-of-type {
+      padding-bottom: unset;
+      border-bottom: unset;
+    }
+  }
+
+  &__button-exit {
+    color: var(--error);
+  }
+}

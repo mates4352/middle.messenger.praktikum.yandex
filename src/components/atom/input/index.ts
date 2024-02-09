@@ -1,5 +1,5 @@
 import * as Handlebars from "handlebars";
-import tpl from "./tpl.hbs?raw";
+import tpl from "./index.hbs?raw";
 
 Handlebars.registerPartial("input", tpl);
 

@@ -1,5 +1,5 @@
 import * as Handlebars from "handlebars";
-import tpl from "./button.hbs?raw";
+import tpl from "./index.hbs?raw";
 
 Handlebars.registerPartial("button", tpl);
 

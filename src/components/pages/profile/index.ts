@@ -5,7 +5,11 @@ import image from "./../../../assets/images/icons/logo.svg";
 
 Handlebars.registerPartial("Profile", tpl);
 
-export const Profile = () => {
+type ProfileType = {
+  content: any;
+};
+
+export const Profile = ({ content }: ProfileType) => {
   return Handlebars.compile(tpl)({
     iconArrow: IconArrow({
       className: "profile__icon-arrow",
@@ -13,5 +17,6 @@ export const Profile = () => {
 
     src: image,
     name: "Иван",
+    content,
   });
 };

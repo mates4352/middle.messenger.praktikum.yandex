@@ -1,0 +1,18 @@
+<section class="profile-data">
+    <div class="profile-data__content">
+        {{#each profileDataContent}}
+            <div class="profile-data__wrap">
+                <p class="profile-data__text">{{text}}</p>
+                {{{input}}}
+            </div>
+        {{/each}}
+    </div>
+
+    <ul class="profile-data__list">
+        {{#each profileDataList}}
+            <li class="profile-data__item">
+                {{{button}}}
+            </li>
+        {{/each}}
+    </ul>
+</section>
