@@ -1,0 +1,9 @@
+.button-text {
+  font: var(--buttonText--font, var(--font_4));
+  color: var(--buttonText-color, var(--blue-100));
+  transition: transform 300ms ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
