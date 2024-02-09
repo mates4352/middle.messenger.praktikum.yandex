@@ -11,6 +11,7 @@ export const CreateAccount = () => {
       name: "email",
       type: "email",
       labelValue: "Почта",
+      error: "",
     }),
 
     input2: input({
@@ -18,6 +19,7 @@ export const CreateAccount = () => {
       name: "login",
       type: "text",
       labelValue: "Логин",
+      error: "",
     }),
 
     input3: input({
@@ -25,6 +27,7 @@ export const CreateAccount = () => {
       name: "first_name",
       type: "text",
       labelValue: "Имя",
+      error: "",
     }),
 
     input4: input({
@@ -32,6 +35,7 @@ export const CreateAccount = () => {
       name: "second_name",
       type: "text",
       labelValue: "Фамилия",
+      error: "",
     }),
 
     input5: input({
@@ -39,6 +43,7 @@ export const CreateAccount = () => {
       name: "phone",
       type: "phone",
       labelValue: "Телефон",
+      error: "",
     }),
 
     input6: input({
@@ -46,6 +51,7 @@ export const CreateAccount = () => {
       name: "password",
       type: "password",
       labelValue: "Пароль",
+      error: "",
     }),
 
     input7: input({
@@ -53,6 +59,7 @@ export const CreateAccount = () => {
       name: "password_confirm",
       type: "password",
       labelValue: "Пароль (ещё раз)",
+      error: "",
     }),
 
     button: Button({
