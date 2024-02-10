@@ -2,6 +2,7 @@ import "./src/assets/styles/styles.scss";
 import tpl from "./index.hbs?raw";
 import * as Handlebars from "handlebars";
 import {
+  Chat,
   CreateAccount,
   Error,
   Profile,
@@ -32,10 +33,10 @@ const res = comp({
   page6: Profile({
     content: ProfileDataChange(),
   }),
-
   page7: Profile({
     content: ProfileDataChangePassword(),
   }),
+  page8: Chat(),
 });
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = res;
