@@ -1,7 +1,7 @@
 import * as Handlebars from "handlebars";
 import tpl from "./index.hbs?raw";
 import { IconArrowRow } from "../../atom/icons";
-import { InputSearch, MessageGroup } from "../../atom";
+import { Counter, InputSearch, MessageGroup } from "../../atom";
 
 Handlebars.registerPartial("Chat", tpl);
 
@@ -25,7 +25,10 @@ export const Chat = () => {
           name: "Андрей",
           message: "Изображение",
           date: "10:49",
-          counter: "2",
+          counter: Counter({
+            className: "message-group__counter",
+            counter: "2",
+          }),
         }),
       },
 
@@ -48,7 +51,10 @@ export const Chat = () => {
           message:
             "Друзья, у меня для вас особенный выпуск новостей! особенный выпуск новостей!",
           date: "15:12",
-          counter: "4",
+          counter: Counter({
+            className: "message-group__counter",
+            counter: "4",
+          }),
         }),
       },
 
@@ -82,7 +88,10 @@ export const Chat = () => {
           name: "1, 2, 3",
           message: "Изображение",
           date: "10:49",
-          counter: "2",
+          counter: Counter({
+            className: "message-group__counter",
+            counter: "2",
+          }),
         }),
       },
 
@@ -105,7 +114,10 @@ export const Chat = () => {
           name: "Андрей",
           message: "Изображение",
           date: "10:49",
-          counter: "2",
+          counter: Counter({
+            className: "message-group__counter",
+            counter: "2",
+          }),
         }),
       },
 

@@ -10,7 +10,7 @@ type MessageGroupType = {
   date: string;
   name: string;
   message: string;
-  counter: string;
+  counter: any;
 };
 
 export const MessageGroup = ({
