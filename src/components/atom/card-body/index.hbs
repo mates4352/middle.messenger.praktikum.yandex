@@ -1,0 +1,26 @@
+<div class="card-body">
+    <form class="card-body__form" id="{{cardBodyFormId}}">
+        <h2 class="card-body__title">{{title}}</h2>
+
+        <div class="card-body__wrap {{classNameCardBodyWrap}}">
+            {{#each cardBodyWrapInputs}}
+                {{{input}}}
+            {{/each}}
+        </div>
+
+        <ul class="card-body__list">
+            <li>
+                {{{button}}}
+            </li>
+
+            <li>
+                <button
+                        class="card-body__button-to"
+                        id="{{cardBodyButtonToId}}"
+                        type="button">
+                    {{cardBodyButtonToText}}
+                </button>
+            </li>
+        </ul>
+    </form>
+</div>

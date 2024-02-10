@@ -1,44 +1,4 @@
 .create-account {
   display: flex;
   min-height: 100vh;
-
-  &__body {
-    max-width: 340px;
-    width: 100%;
-    margin: auto;
-    padding: 50px 30px 30px;
-    border-radius: 12px;
-    background: var(--white);
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.14);
-  }
-
-  &__form {
-
-  }
-
-  &___title {
-    margin-bottom: 40px;
-    font: var(--font_2);
-    color: var(--dark);
-    text-align: center;
-  }
-
-  &__wrap {
-    display: grid;
-    grid-auto-rows: minmax(min-content, max-content);
-    gap: 32px;
-    margin-bottom: 48px;
-  }
-
-  &__list {
-    max-width: 280px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  &__button-to-sign-in {
-    margin-top: 14px;
-    font: var(--font_6);
-    color: var(--blue-100);
-  }
 }
