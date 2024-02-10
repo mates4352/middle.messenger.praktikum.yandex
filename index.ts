@@ -14,29 +14,53 @@ import {
 
 const comp = Handlebars.compile(tpl);
 
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".main__button");
+  const pages = document.querySelectorAll(".main__list-item");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      pages.forEach((page) => {
+        page.classList.remove("main__list-item--isShow");
+
+        if (button.textContent === page.id) {
+          page.classList.add("main__list-item--isShow");
+        }
+      });
+    });
+  });
+});
+
 const res = comp({
   page1: signIn(),
+
   page2: CreateAccount(),
-  page3: Error({
+
+  page3: Profile({
+    content: ProfileData(),
+  }),
+
+  page4: Profile({
+    content: ProfileDataChange(),
+  }),
+
+  page5: Profile({
+    content: ProfileDataChangePassword(),
+  }),
+
+  page6: Chat(),
+
+  page7: Error({
     error: "505",
     text: "Мы уже фиксим",
     href: "/",
   }),
-  page4: Error({
+
+  page8: Error({
     error: "404",
     text: "Не туда попали",
     href: "/",
   }),
-  page5: Profile({
-    content: ProfileData(),
-  }),
-  page6: Profile({
-    content: ProfileDataChange(),
-  }),
-  page7: Profile({
-    content: ProfileDataChangePassword(),
-  }),
-  page8: Chat(),
 });
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = res;

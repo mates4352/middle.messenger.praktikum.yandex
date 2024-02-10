@@ -6,6 +6,7 @@ Handlebars.registerPartial("ProfileDataChangePassword", tpl);
 
 export const ProfileDataChangePassword = () => {
   return Handlebars.compile(tpl)({
+    idForm: "profile-data-change-password-form-id",
     profileDataInputs: ProfileDataInputs({
       inputs: [
         {
@@ -42,6 +43,7 @@ export const ProfileDataChangePassword = () => {
 
     button: Button({
       className: "profile-data-change-password__button",
+      id: "profile-data-change-password-button-save-id",
       text: "Сохранить",
       type: "submit",
     }),

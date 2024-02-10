@@ -11,6 +11,7 @@ export const CreateAccount = () => {
       title: "Регистрация",
       button: Button({
         text: "Зарегистрироваться",
+        id: "create-account-form-button-submit-id",
         type: "submit",
       }),
       cardBodyButtonToId: "create-account-button-to-sign-in-id",
@@ -28,7 +29,7 @@ export const CreateAccount = () => {
 
         {
           input: input({
-            id: "create-account-form-input-email",
+            id: "create-account-form-input-login",
             name: "login",
             type: "text",
             labelValue: "Логин",
@@ -38,7 +39,7 @@ export const CreateAccount = () => {
 
         {
           input: input({
-            id: "create-account-form-input-email",
+            id: "create-account-form-input-first-name",
             name: "first_name",
             type: "text",
             labelValue: "Имя",
@@ -48,7 +49,7 @@ export const CreateAccount = () => {
 
         {
           input: input({
-            id: "create-account-form-input-email",
+            id: "create-account-form-input-second-name",
             name: "second_name",
             type: "text",
             labelValue: "Фамилия",
@@ -58,7 +59,7 @@ export const CreateAccount = () => {
 
         {
           input: input({
-            id: "create-account-form-input-email",
+            id: "create-account-form-input-phone",
             name: "phone",
             type: "phone",
             labelValue: "Телефон",
@@ -68,7 +69,7 @@ export const CreateAccount = () => {
 
         {
           input: input({
-            id: "create-account-form-input-email",
+            id: "create-account-form-input-password",
             name: "password",
             type: "password",
             labelValue: "Пароль",
@@ -78,7 +79,7 @@ export const CreateAccount = () => {
 
         {
           input: input({
-            id: "create-account-form-input-email",
+            id: "create-account-form-input-password-confirm",
             name: "password_confirm",
             type: "password",
             labelValue: "Пароль (ещё раз)",

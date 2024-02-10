@@ -6,6 +6,7 @@ Handlebars.registerPartial("ProfileDataChange", tpl);
 
 export const ProfileDataChange = () => {
   return Handlebars.compile(tpl)({
+    idForm: "profile-data-change-form-id",
     profileDataInputs: ProfileDataInputs({
       inputs: [
         {
@@ -72,6 +73,7 @@ export const ProfileDataChange = () => {
 
     button: Button({
       className: "profile-data-change__button",
+      id: "profile-data-change-button-save-id",
       text: "Сохранить",
       type: "submit",
     }),
