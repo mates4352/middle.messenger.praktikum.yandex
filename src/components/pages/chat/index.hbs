@@ -1,0 +1,29 @@
+<section class="chat {{className}}">
+
+    <div class="chat__group">
+        <button class="chat__button"
+                id="chat-button-id"
+                type="button">
+            Профиль {{{icon}}}
+        </button>
+
+        <div class="chat__wrap-input-search">
+            {{{inputSearch}}}
+        </div>
+
+        <ul class="chat__list">
+            {{#each items}}
+                <li class="chat__item">
+                    <button class="chat__button-message-group"
+                            id="chat-button-message-group"
+                            type="button">
+                        {{{messageGroup}}}
+                    </button>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="chat__content">
+    </div>
+</section>

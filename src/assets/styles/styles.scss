@@ -1,0 +1,43 @@
+@import "variables-global";
+@import "colors-variables";
+@import "fonts-variables";
+@import "normalize";
+@import "./src/components/atom/index";
+@import "./src/components/pages/index";
+
+.main {
+
+  &__menu {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__menu-item {
+
+  }
+
+  &__list {
+
+  }
+
+  &__list-item {
+    display: none;
+    grid-auto-rows: minmax(min-content, max-content);
+    min-height: 100vh;
+
+    &--isShow {
+      display: grid;
+    }
+  }
+}

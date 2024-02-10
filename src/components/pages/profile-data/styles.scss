@@ -1,0 +1,25 @@
+.profile-data {
+
+  &__list {
+  }
+
+  &__item {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--grey-80);
+
+    &:first-of-type {
+      padding-top: unset;
+    }
+
+    &:last-of-type {
+      padding-bottom: unset;
+      border-bottom: unset;
+    }
+  }
+
+  &__button-exit {
+    color: var(--error);
+  }
+}

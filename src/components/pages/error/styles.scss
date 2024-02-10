@@ -1,0 +1,28 @@
+.error {
+  display: flex;
+  min-height: 100vh;
+
+  &__body {
+    margin: auto;
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font: var(--font_1);
+    color: var(--dark);
+  }
+
+  &__text {
+    margin-bottom: 70px;
+    font: var(--font_2);
+    color: var(--dark);
+  }
+
+  &__link {
+    font: var(--font_6);
+    color: var(--blue-100);
+  }
+}

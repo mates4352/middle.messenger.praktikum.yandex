@@ -1,0 +1,10 @@
+.input-text {
+  color: var(--input-text-color, var(--grey-90));
+  font: var(--input-text-font, var(--font_4));
+  text-align: right;
+  background-color: transparent;
+}
+
+.input-text-disabled {
+  pointer-events: none;
+}
