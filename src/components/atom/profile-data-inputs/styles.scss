@@ -1,25 +1,27 @@
-.profile-data {
-
-  &__list {
-  }
-
+.profile-data-inputs {
+  margin-bottom: 60px;
+  
   &__item {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--grey-80);
+
 
     &:first-of-type {
       padding-top: unset;
     }
 
     &:last-of-type {
-      padding-bottom: unset;
       border-bottom: unset;
+      padding-bottom: unset;
     }
   }
 
-  &__button-exit {
-    color: var(--error);
+  &__text {
+    font: var(--font_4);
+    color: var(--dark);
   }
 }
