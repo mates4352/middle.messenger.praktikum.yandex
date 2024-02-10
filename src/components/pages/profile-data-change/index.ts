@@ -19,7 +19,6 @@ export const ProfileDataChange = () => {
           value: "pochta@yandex.ru",
           type: "text",
           name: "email",
-          disabled: false,
         }),
       },
 
@@ -30,7 +29,6 @@ export const ProfileDataChange = () => {
           value: "ivanivanov",
           type: "text",
           name: "login",
-          disabled: false,
         }),
       },
 
@@ -41,7 +39,6 @@ export const ProfileDataChange = () => {
           value: "Иван",
           type: "text",
           name: "first_name",
-          disabled: false,
         }),
       },
 
@@ -52,7 +49,6 @@ export const ProfileDataChange = () => {
           value: "Иванов",
           type: "text",
           name: "second_name",
-          disabled: false,
         }),
       },
 
@@ -63,7 +59,6 @@ export const ProfileDataChange = () => {
           value: "Иван",
           type: "text",
           name: "display_name",
-          disabled: false,
         }),
       },
 
@@ -74,7 +69,6 @@ export const ProfileDataChange = () => {
           value: "+7 (909) 967 30 30",
           type: "text",
           name: "phone",
-          disabled: false,
         }),
       },
     ],

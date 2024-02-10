@@ -9,7 +9,6 @@ type InputTextType = {
   value: string;
   type: string;
   name: string;
-  disabled: boolean;
 };
 
 export const InputText = ({
@@ -18,7 +17,6 @@ export const InputText = ({
   value,
   type,
   name,
-  disabled,
 }: InputTextType) => {
   return Handlebars.compile(tpl)({
     className,
@@ -26,6 +24,5 @@ export const InputText = ({
     value,
     type,
     name,
-    disabled,
   });
 };
