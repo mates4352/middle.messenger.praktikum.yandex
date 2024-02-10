@@ -6,3 +6,4 @@ export * from "./button-text/index";
 export * from "./card-body/index";
 export * from "./profile-data-inputs/index";
 export * from "./input-search/index";
+export * from "./message-group/index";
